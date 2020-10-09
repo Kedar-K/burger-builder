@@ -1,13 +1,13 @@
 import React,{Component} from 'react'
-
 import Aux from '../../HOC/Auxilary'
+import Burger from '../../Components/Burger/Burger'
 
 class BurgerBuilder extends Component{
     render() {
         return (
             <Aux>
                 <div>
-                    Burger
+                    <Burger />
                 </div>
                 <div>
                     Burger Controls
@@ -18,3 +18,4 @@ class BurgerBuilder extends Component{
     }
 }
 
+export default BurgerBuilder;
