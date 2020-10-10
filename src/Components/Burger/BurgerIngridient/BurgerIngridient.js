@@ -36,7 +36,7 @@ const burgerIngridient = (props) =>{
     return ingridient;
 };
 
-burgerIngridient.prototype ={
+burgerIngridient.propType ={
     type: PropTypes.string.isRequired
 }
 
