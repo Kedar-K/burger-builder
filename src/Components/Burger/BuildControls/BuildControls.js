@@ -10,14 +10,17 @@ const controls=[
 ];
 
 const buildControls = (props) =>{
+    // console.log(props.disabled);
     return(
     <div className={classes.BuildControls}>
+        <p>Current Price: {props.price}</p>
         {controls.map(ctrl => (
             <Controls 
             key={ctrl.label} 
             label={ctrl.label}
             added={()=>props.ingridientAdded(ctrl.type)}
-            removed={() => props.ingridientDeducted(ctrl.type)} />
+            removed={() => props.ingridientDeducted(ctrl.type)}
+            disabled={props.disabled[ctrl.type]} />
         ))}
     </div>
     )
