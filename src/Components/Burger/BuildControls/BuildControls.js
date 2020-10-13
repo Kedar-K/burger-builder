@@ -16,7 +16,8 @@ const buildControls = (props) =>{
             <Controls 
             key={ctrl.label} 
             label={ctrl.label}
-            added={()=>props.ingridientAdded(ctrl.type)} />
+            added={()=>props.ingridientAdded(ctrl.type)}
+            removed={() => props.ingridientDeducted(ctrl.type)} />
         ))}
     </div>
     )
