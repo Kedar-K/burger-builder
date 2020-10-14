@@ -1,11 +1,15 @@
 .Burger{
     width: 100px;
-    margin: auto;
+    margin:auto;
     height: 100px;
     overflow: scroll;
     text-align: center;
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 @media(min-width: 300px) and (min-height: 400px){
@@ -40,6 +44,6 @@
 @media(min-width: 1000px) and (min-height: 700px){
     .Burger{
         width:700px;
-        height: 600px;
+        height: 50px;
     }
 }
