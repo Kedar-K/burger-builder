@@ -12,7 +12,8 @@ const controls=[
 const buildControls = (props) =>{
     // console.log(props.disabled);
     return(
-    <div className={classes.BuildControls}>
+    <div className={classes.BuildControls} disabled={props.purchesables}>
+        <button className={classes.OrderButton}>Order Now</button>
         <p>Current Price: <strong>{props.price.toFixed(2)}</strong></p>
         {controls.map(ctrl => (
             <Controls 
@@ -22,6 +23,7 @@ const buildControls = (props) =>{
             removed={() => props.ingridientDeducted(ctrl.type)}
             disabled={props.disabled[ctrl.type]} />
         ))}
+        
     </div>
     )
 }
