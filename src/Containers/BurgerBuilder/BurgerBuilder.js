@@ -19,7 +19,7 @@ class BurgerBuilder extends Component{
             meat: 0
         },
         totalPrice: 4,
-        purchesable: fsalse
+        purchesable: false
     }
 
     updatePurchaseState =() =>{
