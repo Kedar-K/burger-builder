@@ -10,10 +10,11 @@ const controls=[
 ];
 
 const buildControls = (props) =>{
-    // console.log(props.disabled);
+    // console.log(props.purchesables);
     return(
-    <div className={classes.BuildControls} disabled={!props.purchesables}>
-        <button className={classes.OrderButton}>Order Now</button>
+
+    <div className={classes.BuildControls} >
+        <button className={classes.OrderButton} disabled={!props.purchesables}>Order Now</button>
         <p>Current Price: <strong>{props.price.toFixed(2)}</strong></p>
         {controls.map(ctrl => (
             <Controls 

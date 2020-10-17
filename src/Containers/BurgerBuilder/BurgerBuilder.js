@@ -35,6 +35,8 @@ class BurgerBuilder extends Component{
             return sum + el;
         }, 0)
 
+        console.log(sum);
+        console.log(this.state);
         this.setState({purchesable: sum>0})
     }
 
@@ -90,7 +92,7 @@ class BurgerBuilder extends Component{
                     ingridientDeducted = {this.removeIngridientHandeller}
                     disabled={disableInfo}
                     price={this.state.totalPrice}
-                    purchesable={!this.state.purchesable} />
+                    purchesables={this.state.purchesable} />
                 </div>
             </Aux>
             
