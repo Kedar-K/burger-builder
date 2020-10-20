@@ -1,6 +1,6 @@
 .BuildControls{
-    width: 70%;
-    background-color: lightcoral;
+    width: 100%;
+    background-color: lightsalmon;
     margin: auto;
     display: flex;
     flex-flow: column;
